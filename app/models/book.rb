@@ -3,4 +3,5 @@ class Book < ApplicationRecord
 
 	validates :title, presence: true
     validates :body, presence: true, length: { maximum: 50 }
+    has_many :post_comments, dependent: :destroy
 end

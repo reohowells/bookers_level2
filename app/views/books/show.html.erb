@@ -64,3 +64,16 @@
 		</div>
 	</div>
 </div>
+
+<li>
+  <i class="fa fa-comment"></i>
+  <a href="#comments"><%= @book.user.post_comments.count %></a>
+</li>
+
+:
+:
+
+<div class="comment-list bt style-2" id="comments">
+  <div class="float-wrapper">
+    <h2 class="comment-count"><%= @book.user.post_comments.count %>件コメント</h2>
+  </div>
